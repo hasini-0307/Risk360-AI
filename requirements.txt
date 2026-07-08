@@ -1,0 +1,61 @@
+# ==========================
+# Core Data Processing
+# ==========================
+
+numpy
+pandas
+scipy
+
+# ==========================
+# Machine Learning
+# ==========================
+
+scikit-learn
+catboost
+lightgbm
+xgboost
+joblib
+shap
+
+# ==========================
+# LLM & AI
+# ==========================
+
+groq
+openai
+python-dotenv
+pydantic
+
+# ==========================
+# RAG
+# ==========================
+
+chromadb
+sentence-transformers
+
+# ==========================
+# Backend
+# ==========================
+
+fastapi
+uvicorn
+
+# ==========================
+# Frontend
+# ==========================
+
+streamlit
+plotly
+
+# ==========================
+# Visualization
+# ==========================
+
+matplotlib
+
+# ==========================
+# Utilities
+# ==========================
+
+requests
+tqdm
