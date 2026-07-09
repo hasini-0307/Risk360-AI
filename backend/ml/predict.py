@@ -30,9 +30,15 @@ def predict_default(input_data):
         probability of default
     """
 
-    df = pd.DataFrame([input_data])
+    # Keep only the features the model was trained on
+    model_input = {
+        feature: input_data.get(feature)
+        for feature in feature_columns
+    }
 
-    # Ensure same feature order used during training
+    df = pd.DataFrame([model_input])
+
+    # Ensure same feature order
     df = df[feature_columns]
 
     probability = model.predict_proba(df)[0][1]

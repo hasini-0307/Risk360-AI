@@ -31,9 +31,15 @@ def explain_prediction(input_data):
         List of (feature, SHAP value) sorted by importance
     """
 
-    df = pd.DataFrame([input_data])
+    # Keep only the features used during training
+    model_input = {
+        feature: input_data.get(feature)
+        for feature in feature_columns
+    }
 
-    # Ensure exact same feature order used during training
+    df = pd.DataFrame([model_input])
+
+    # Ensure same feature order
     df = df[feature_columns]
 
     # SHAP values
