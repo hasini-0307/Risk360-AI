@@ -1,61 +1,50 @@
 # ==========================
-# Core Data Processing
+# Core AI & ML
 # ==========================
-
 numpy
 pandas
-scipy
-
-# ==========================
-# Machine Learning
-# ==========================
-
 scikit-learn
+xgboost
 catboost
 lightgbm
-xgboost
-joblib
+
+# ==========================
+# Explainability
+# ==========================
 shap
 
 # ==========================
-# LLM & AI
+# Vector Database / RAG
 # ==========================
-
-groq
-openai
-python-dotenv
-pydantic
-
-# ==========================
-# RAG
-# ==========================
-
 chromadb
 sentence-transformers
 
 # ==========================
-# Backend
+# LLM
 # ==========================
+groq
+python-dotenv
 
+# ==========================
+# API
+# ==========================
 fastapi
 uvicorn
 
 # ==========================
-# Frontend
+# Data Validation
 # ==========================
-
-streamlit
-plotly
-
-# ==========================
-# Visualization
-# ==========================
-
-matplotlib
+pydantic
 
 # ==========================
 # Utilities
 # ==========================
-
-requests
+python-multipart
 tqdm
+joblib
+requests
+
+# ==========================
+# Logging & Config
+# ==========================
+pyyaml
